@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HallHelper ♡ Your little hall companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="HallHelper home">
+        <span class="brand-icon">♡</span>
+        <span>Hall<span class="brand-pink">Helper</span><small>your little hall companion</small></span>
+      </a>
+      <div class="side-label">YOUR SPACE</div>
+      <button class="nav-item active" data-scroll="top"><span>⌂</span> Home</button>
+      <button class="nav-item" data-scroll="chat-section"><span>✿</span> Ask HallHelper</button>
+      <button class="nav-item" data-scroll="tools"><span>♡</span> Hall tools</button>
+      <div class="sidebar-note">
+        <span class="sparkle">✧</span>
+        <p><strong>A little reminder</strong><br>You deserve to feel safe, supported, and at home.</p>
+      </div>
+      <div class="side-footer"><span class="online-dot"></span> Your cozy corner, online</div>
+    </aside>
+
+    <main class="main-content" id="top">
+      <header class="topbar">
+        <div class="mobile-brand">♡ HallHelper</div>
+        <div class="top-date">A little help goes a long way ✨</div>
+        <div class="avatar">🌷</div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>✦</span> MADE FOR HALL LIFE</div>
+          <h1>Hey, hall girlie!<br><span>We've got this.</span> ♡</h1>
+          <p>Little questions, hall-life hassles, or just need a hand? Your friendly helper is right here.</p>
+          <button class="primary-btn" id="start-chat">Chat with HallHelper <span>↗</span></button>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-circle"></div>
+          <div class="floating heart-one">♥</div>
+          <div class="floating star-one">✦</div>
+          <div class="floating flower">✿</div>
+          <div class="book-stack"><div class="book book-back"></div><div class="book book-mid"></div><div class="book book-front">take<br>a breath ♡</div></div>
+          <div class="mug">☕<span>♡</span></div>
+          <div class="plant">🌱</div>
+        </div>
+        <div class="hero-sticker">YOU CAN DO IT!<br><span>♡ ♡ ♡</span></div>
+      </section>
+
+      <section class="tools-section" id="tools">
+        <div class="section-heading"><div><div class="eyebrow">YOUR LITTLE TOOLKIT</div><h2>What do you need today?</h2></div><span class="tiny-flower">✿</span></div>
+        <div class="tool-grid">
+          <button class="tool-card lilac" data-prompt="Help me write a polite message to hall staff about a problem in my room. Ask me what happened first."><span class="tool-emoji">📝</span><span class="tool-title">Report a problem</span><span class="tool-desc">Get help wording a message to hall staff.</span><span class="card-arrow">↗</span></button>
+          <button class="tool-card peach" data-prompt="Help me make a lost-and-found notice for something I lost in the hall. Ask me what item and where I last saw it."><span class="tool-emoji">🔎</span><span class="tool-title">Lost & found</span><span class="tool-desc">Make a clear lost-item notice.</span><span class="card-arrow">↗</span></button>
+          <button class="tool-card mint" data-prompt="Help me make a simple, realistic study plan around my university and hall routine. Ask me about my classes and deadlines."><span class="tool-emoji">📚</span><span class="tool-title">Study planner</span><span class="tool-desc">Make a manageable plan, one step at a time.</span><span class="card-arrow">↗</span></button>
+          <button class="tool-card butter" data-prompt="I have a question about hall life. Help me figure out what to ask the hall office, and don't invent official rules or contact numbers."><span class="tool-emoji">💌</span><span class="tool-title">Hall-life help</span><span class="tool-desc">Think through your next best step.</span><span class="card-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="chat-section" id="chat-section">
+        <div class="section-heading"><div><div class="eyebrow">YOUR FRIENDLY AI ASSISTANT</div><h2>Let's figure it out together</h2></div><div class="ai-badge"><span class="online-dot"></span> Gemma AI</div></div>
+        <div class="chat-card">
+          <div class="chat-top"><div class="bot-avatar">🌸</div><div><strong>HallHelper</strong><p>Here for the little things and the big feelings.</p></div><span class="chat-status">● READY TO HELP</span></div>
+          <div class="chat-messages" id="chat-messages" aria-live="polite">
+            <div class="message bot-message"><div class="message-avatar">♡</div><div class="bubble">Hiii! 🌷 Welcome to your little safe corner. What can I help you with today?</div></div>
+          </div>
+          <div class="suggestions"><button data-prompt="Help me write a polite complaint to hall staff.">✎ Write a complaint</button><button data-prompt="Help me plan my study time this week.">📖 Study plan</button><button data-prompt="I'm feeling overwhelmed by hall and university life. Help me sort out one small next step.">☁️ I need a little help</button></div>
+          <form class="chat-form" id="chat-form"><label for="chat-input" class="sr-only">Type your message</label><input id="chat-input" type="text" placeholder="Tell me what's on your mind..." maxlength="2000" autocomplete="off"><button id="send-btn" type="submit" aria-label="Send message">Send <span>➤</span></button></form>
+          <p class="chat-disclaimer">A friendly AI helper—not an official hall office. Please don't share passwords or private information.</p>
+        </div>
+      </section>
+      <footer>Made with <span>♥</span> for hall girls, one little problem at a time.</footer>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
